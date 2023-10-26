@@ -1,0 +1,81 @@
+{% extends 'main/base-template.html' %}
+{% load static %}
+
+{% block content %}
+	<div class="about-banner">
+		<img src="{% static 'main/images/Image 28.png' %}" class="w-100">
+		<div class="about-overlay"></div>
+	</div>
+	<section id="why-choose-us" class="about-common">
+		<div class="container-fluid">
+			<div class="who-content px-3 pb-3 pt-0 mb-3 w-75 mx-auto">
+				<h2 class="p-3 mb-0 text-center w-75 mx-auto">
+					WHY CHOOSE LIVING PLUS CARE SERVICE?
+				</h2>
+				<p class="mb-3">
+					Choosing a care provider can be a challenging decision. Here at living Plus Care Sorvices, too want to make that choice a little easier for you.  
+				</p>
+				<ol>
+					<li>
+						<h6>Personalised Care</h6>
+						<p>
+							We understand that everyone's needs are unique, so we tailor our services to cater to each client's specific needs. Our care plans are developed in close consultation with clients and their families, ensuring that the services we provide are as unique as the individuals we serve.
+						</p>
+					</li>
+					<li>
+						<h6>Local Understanding</h6>
+						<p>
+							Our deep connection with the communities of Hertfordshire & Cambridgeshire means we appreciate and respect the local customs and traditions. This local understanding allows us to offer care that fits seamlessly into our clients' lives.
+						</p>
+					</li>
+					<li>
+						<h6>Versatile Services</h6>
+						<p> 
+							Our services range from Domiciliary Care, Temporary Staffing, to Supported Living, demonstrating our ability to meet a wide spectrum of needs. Whether you need short-term assistance or long-term support, our flexible solutions are designed to accommodate your situation. 
+
+						</p>
+					</li>
+					<li>
+						<h6>Quality Professionals</h6>
+						<p>
+							Our team consists of highly trained professionals who not only possess the required skills and qualifications but also embody our commitment to compassionate care.
+						</p>
+					</li>
+					<li>
+						<h6>Client Satisfaction</h6>
+						<p>
+							We take pride in the positive feedback and high ratings we receive from our clients and their families. Our focus on client satisfaction and continual improvement ensures we are always delivering the best possible care. 
+						</p>
+					</li>
+				</ol>
+				
+				<p class="">
+					Choose Living Plus Care Services for a partnership in care that prioritises your comfort, respects your lifestyle, and is committed to your wellbeing right at your home.
+				</p>
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="container conversation p-3">
+		<div class="row w-75 mxss-auto">
+			<article class="col-md-6"> 
+				<br> <br>
+				<h2 class="mb-3">LET'S START <br>THE CONVERSATION TODAY</h2>
+				<p class="px-3">
+					Contact our caring team to explore the world of care
+					and discover how we can enhance your family's well-being
+					right at home.
+				</p>
+
+				<a href="{% url 'contact_us' %}" class="btn">Contact us</a>
+			</article>
+			<aside class="col-md-6">
+				<div class="img-container"> <br>
+					<img src="{% static 'main/images/conversation.jpeg' %}" class="w-100 mx-auto" style="border-radius: 10px; mix-blend-mode: multiply;">
+					<div class="overlay"></div>
+				</div>
+			</aside>
+		</div>
+	</section>
+{% endblock content %}

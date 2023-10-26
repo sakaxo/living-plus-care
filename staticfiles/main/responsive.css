@@ -1,0 +1,19 @@
+@media only screen and (max-width: 390px) {
+  .partner-images img{
+  width: 100%;
+}
+}
+
+
+@media only screen and (max-width: 770px) {
+#guiding-you h2{
+  width: 80%;
+  font-size: 1em;
+}
+}
+
+@media only screen and (max-width: 300px) {
+#guiding-you h2{
+  width: 100%;
+}
+}

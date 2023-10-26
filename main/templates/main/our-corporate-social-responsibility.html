@@ -1,0 +1,67 @@
+{% extends 'main/base-template.html' %}
+{% load static %}
+
+{% block content %}
+	<div class="about-banner">
+		<img src="{% static 'main/images/Image 29.png' %}" class="w-100">
+		<div class="about-overlay"></div>
+	</div>
+	<section id="corporate-responsibility" class="about-common">
+		<div class="container-fluid">
+			<div class="who-content px-3 pb-3 pt-0 mb-3 w-75 mx-auto">
+				<h2 class="p-3 mb-0 text-center w-75 mx-auto">
+					OUR CORPORATE SOCIAL RESPONSIBILITY
+				</h2>
+				<p class="mb-3 p-2">
+					At Living Plus Care Services, we understand our role in society extends beyond providing excepeional home case services. We strive to positively impact our society, employees, and environment.   
+				</p>
+				<ol>
+					<li>
+						<h6>Community Engagement And Local Development</h6>
+						<p>
+							As a locally rooted business in Hatfield and Peterborough we we deeply committed to fostering the growth development of our communities. We take pride in recruiting locally, providing job opportunities that strengthen the local economy and support individuals in their career paths. We also actively
+							participate in apprenticeship schemes, nuturing the next generation of healthcare professionals. <br>
+							We source our needs from local businessses wherever possible, contributing to the local economy and promoting sustainability. Through training programs, we ensure our team's skills are continually updated, ensuring they deliver the best possible care to our clients. <br>
+							We go beyond service delivery by actively contributing to initiatives that encourage community health and wellbeing. This includes conducting public education campaigns, organising seasonal initiatives, and creating platforms that promote community engagement and mutual support.
+
+						</p>
+					</li>
+					<li>
+						<h6>Eco-Friendly Practices</h6>
+						<p>	 
+							We're committed to reducing our carbon footprint. By optimising our visit schedules, we minimise travel distance and, in turn reduce emissions. Our transition to digital platforms has signficantly lessened paper usage across our operations. Moreover, we are exploring environmentally friendly transport options, such as electric cars for care managers' visits to clients.
+						</p>
+					</li>
+					<li>
+						<h6>Employee Wellness</h6>
+						<p> 
+							Our team's well-being is central to our operations. We offer comprehensive employee assistance programmes, covering areas from mental health to occupational health support. Additionally, our learning and development programmes, supplemented by recognised CPD elerning modules, enable the continuous professional growth of our team. 
+						</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+
+	<section class="container conversation p-3">
+		<div class="row w-75 mxss-auto">
+			<article class="col-md-6"> 
+				<br> <br>
+				<h2 class="mb-3">LET'S START <br>THE CONVERSATION TODAY</h2>
+				<p class="px-3">
+					Contact our caring team to explore the world of care
+					and discover how we can enhance your family's well-being
+					right at home.
+				</p>
+
+				<a href="{% url 'contact_us' %}" class="btn">Contact us</a>
+			</article>
+			<aside class="col-md-6">
+				<div class="img-container">
+					<img src="{% static 'main/images/conversation.jpeg' %}" class="w-100 mx-auto" style="border-radius: 10px; mix-blend-mode: multiply;">
+					<div class="overlay"></div>
+				</div>
+			</aside>
+		</div>
+	</section>
+{% endblock content %}

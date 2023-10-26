@@ -1,0 +1,224 @@
+:root {
+  --heading-text-color:#0d9775;
+  --base-red-color:#F20F62;
+  --card-bg-color: #019d76;
+  --darkblue-color: #285991;
+  --text-white: #edf8f6;
+  --rating: #fbb24b;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+/*html,body{
+  overflow-x: hidden;
+}
+*/
+h2{
+  font-weight: 500;
+  font-size: 1.5em;
+  color: var(--heading-text-color);
+}
+
+ul li{
+  color: var(--heading-text-color);
+  margin-bottom: 7px;
+}
+
+ul li span{
+  color: black;
+}
+
+#home-page{
+  position: relative;
+}
+
+#home-page img{
+  height: auto;
+  width: 100%;
+}
+.home-page-text{
+  position: absolute;
+  left: 0;
+/*  right: 0;*/
+  bottom: 2em;
+  height: 15em;
+  width: 100%;
+  background: var(--text-white);
+  opacity: .6;
+}
+.home-page-text h1{
+  font-size: 1.3750em;
+}
+#testimony-rating{
+  background: linear-gradient(to right, var(--darkblue-color), var(--card-bg-color));
+  color: var(--text-white);
+
+}
+
+.rating{
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.rating i{
+  padding-right: 1px;
+  color: var(--rating);
+}
+
+.date-review{
+  color: var(--rating);
+}
+
+#testimony-rating ul li{
+  color: var(--card-bg-color);
+}
+#testimony-rating ul li span{
+  color: var(--text-white);
+}
+
+#dedication {
+  color: var(--text-white);
+  background-color: var(--darkblue-color);
+}
+
+#dedication span{
+  color: var(--text-white);
+}
+
+#care-services .card{
+  background-color: var(--card-bg-color);
+  color: var(--text-white);
+  padding: 2em;
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+
+#care-services .card hr{
+ width: 60px;
+ border-top: 3px var(--text-white) solid;
+ margin-bottom: 15px;
+ margin-top: 2px;
+ color: var(--text-white);
+}
+
+#care-services .card h6{
+  font-size: 10px;
+}
+
+#care-services .card h3{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+
+#care-services .card a{
+  color: var(--text-white);
+  border: 1.5px var(--text-white) solid;
+  display: inline-block;
+  position: absolute;
+  bottom: 15px;
+}
+
+
+
+#guiding-you h2{
+  background: var(--card-bg-color);
+  color: var(--text-white);
+  border-radius: 15px;
+  width: 50%;
+  opacity: 1;
+  z-index: 300;
+}
+
+#partners div.container{
+  border: 1.5px var(--card-bg-color) solid;
+  border-left: none;
+  border-right: none;
+}
+
+.partner-images img{
+  width: 19%;
+}
+
+.conversation h2{
+  color: var(--darkblue-color);
+  font-weight: bold;
+}
+
+.img-container{
+  position: relative;
+}
+
+
+.img-container .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--text-white);
+  opacity: .8;
+}
+
+.conversation a{
+  color: var(--darkblue-color);
+  border: 1.3px var(--darkblue-color) solid;
+  transition: opacity 1s;
+}
+
+.conversation a:hover{
+  color: var(--darkblue-color);
+  border: 1.3px var(--darkblue-color) solid;
+  opacity: .8;
+  
+}
+
+
+
+
+
+footer{
+  background: linear-gradient(var(--card-bg-color),var(--darkblue-color));
+  color: var(--text-white);
+  border-radius: none;
+}
+
+footer h2{
+  color: var(--text-white);
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+footer ul{
+  list-style: none;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+footer ul li{
+  color: var(--text-white);
+}
+
+footer ul li i{
+  padding-right: 5px;
+}
+
+footer ul li a{
+  text-align: left !important;
+  color: var(--text-white) !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  opacity: 1;
+  transition: opacity 3s ease-in;
+}
+
+footer ul li a:hover{
+  opacity: .6;
+}

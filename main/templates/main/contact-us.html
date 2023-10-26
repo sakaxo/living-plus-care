@@ -1,0 +1,129 @@
+{% extends 'main/base-template.html' %}
+{% load static %}
+
+{% block content %}
+	<div class="about-banner mb-3">
+		<img src="{% static 'main/images/conversation.jpeg' %}" class="w-100">
+		<div class="contact-overlay" style="position: absolute;top: 50%; left:10%;">
+			<h2 style="font-weight:bold;color: var(--darkblue-color); z-index: 100;">GET IN TOUCH</h2>
+		</div>
+	</div>
+	<section id="contact-us" class="about-common">
+		<div class="container-fluid">
+			<div class="px-3 pb-3 pt-0 mb-3 w-75 mx-auto">
+				<ol style="list-style:none">
+					<li>
+						<h6 style="font-weight:bold;">Care That Revolves Around You </h6>
+						<p>
+							Home is where love, comfort, and care come together. At Living Plus Care Services, we embrace the belief that receiving care at home should empower you and your family to continue living life to the fullest. Our comprehensive Domiciliary Care, Supported Living, and Temporary Staffing services are designed to cater to your specific needs, ensuring you or your loved ones receive the attention and support required while staying in the familiar surroundings of home. 
+						</p>
+
+						<p>
+							With our compassionate caregivers and personalised approach, you can enjoy your usual hobbies and pastimes, knowing that expert assistance is just a step away. If you're curious about how Living Plus Care Services can make a difference, we're here to guide you through the possibilities. 
+						</p>
+					</li>
+					<li>
+						<h6 style="font-weight:bold;">Let's Start The Conversation Today</h6>
+						<p>	 
+						Contact our caring team to explore the world of care and discover how we can enhance your family's well-being right at home. 
+						</p>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-container">
+		<div class="container p-3 mb-3" style="background: var(--darkblue-color); color: var(--text-white);">
+			<div class="row p-3 container">
+				<div class="col-md-4 mb-3">
+					<h6 style="font-weight:normal;" class="mb-3 pe-1">Our locations</h6>
+
+					<div>
+						<h1>Visit our branches</h1>
+						<small>Find us at these locations.</small>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="row">
+						<div class="col-md-6">
+							<h6>Hertfordshire</h6>
+							<ul>
+								<li><i class="fas fa-phone-alt pe-1"></i> 0170 770 7599</li>
+								<li><i class="far fa-envelope pe-1"></i> info@livingpluscare.co.uk</li>
+								<li><i class="fas fa-map-marker-alt pe-1"></i> www.livingpluscare.co.uk</li>
+							</ul>
+							
+						</div>
+						<div class="col-md-6">
+							<h6>Cambridgeshire</h6>
+							<ul>
+								<li><i class="fas fa-phone-alt pe-1"></i> 0173 391 1656</li>
+								<li><i class="far fa-envelope pe-1"></i> info@livingpluscare.co.uk</li>
+								<li><i class="fas fa-globe pe-1"></i> www.livingpluscare.co.uk</li>
+							</ul>
+							
+						</div>
+						<div class="col-">
+							<ul class="ms-auto">
+								<li><i class="fab fa-facebook pe-1"></i> Living Plus Care Services</li>
+								<li><i class="fab fa-facebook pe-1"></i> Living Plus Care Peterborough & Cambridgeshire</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+		<div class="contact-form container p-3">
+			<h2>Send us a Message</h2>
+			<br>
+
+			<form id="contactForm">
+				<div class="row">
+					<div class="col-md-6 mb-3">
+					    <label for="firstName" class="form-label">First Name</label>
+					    <input name="" placeholder="Collins" type="text" class="form-control" id="firstName">
+					    <br>
+					  </div>
+
+					<div class="col-md-6 mb-3">
+						<label for="lastName" class="form-label">Last Name</label>
+						<input name="" placeholder="Bonsi" type="text" class="form-control" id="lastName">
+						<br>
+					</div>
+
+					<div class="col-md-6 mb-3">
+					    <label for="email" class="form-label">Email</label>
+					    <input name="" placeholder="collins2007@hotmail.co.uk" type="email" class="form-control" id="email">
+
+					    <br>
+					</div>
+
+					<div class="col-md-6 mb-3">
+					    <label for="phoneNumber" class="form-label">Phone Number</label>
+					    <input name="" placeholder="+44 7485 441757" type="text" class="form-control" id="phoneNumber">
+
+					    <br>
+					</div>
+
+					<div class="mb-3">
+						<label for="message" class="form-label">Message</label>
+					    <textarea name="" placeholder="We offer support with personal care tasks such as bathing, dressing, toileting, and grooming. Our caregivers respect your privacy and dignity while ensuring your personal hygiene needs are met." rows="8" class="form-control" aria-label="With textarea" id="message"></textarea>
+
+					</div>
+
+					<div class="mb-3"><br>
+
+						<input type="submit" class="btn submit" value="Send Message" 
+						style="">
+					</div>
+				</div>
+			</form>
+		</div>
+		
+	</section> <br>
+
+
+{% endblock content %}
