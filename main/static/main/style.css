@@ -23,6 +23,10 @@ h2{
   color: var(--heading-text-color);
 }
 
+p{
+  font-size: 20px;
+}
+
 ul{
   list-style: none;
 }
@@ -352,13 +356,87 @@ ul li span{
   top:30%;
 }
 
+#supported{
+  position: relative;
+  text-align: center; 
+  color: white;
+}
 
+#supported div{
+  position: absolute;top: 50%;left: 50%; 
+  transform:translate(-50%, -50%); 
+  background:linear-gradient(to right,var(--darkblue-color),  black);
+  opacity: .6;
+  border-radius:20px;
+}
 
+#supported-living{
+  position: relative;
+}
+#supported-living h3{
+  color: var(--darkblue-color);
+}
 
+#delivering-excellence h3{
+  color:var(--darkblue-color);
+}
 
+.delivering-excellence{
+  height: 12.5em; 
+  position:relative;
+}
 
+.delivering-excellence-overlay{
+  border-radius: 20px;
+  background: blue;
+  opacity: .122222;
+}
+.common-overlay{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: -1; 
+}
 
+#reason-support{
+  position: relative;
+}
 
+.reason-support-overlay{
+  border-radius: 20px;
+  background: var(--darkblue-color);
+}
+.reason-support-color{
+  color: var(--text-white);
+}
+
+#supported-approch h3{
+  color: var(--darkblue-color);
+}
+
+#our-process h1{
+  text-transform: capitalize;
+}
+#our-process h1,h3{
+  color: var(--darkblue-color);
+}
+
+#our-process ol{
+  list-style: none;
+}
+
+#our-approach .common-overlay{
+  background: blue;
+  opacity: .122222;
+}
+#empowering-individuals h3{
+  text-transform: capitalize;
+}
+#empowering-individuals h3, h4{
+  color: var(--darkblue-color);
+}
 /*FOOTER START*/
 
 footer{

@@ -1,6 +1,18 @@
 {% extends 'main/base-template.html' %}
 {% load static %}
 
+{% block pageTitle %}
+	<title>Living Plus Care | Home</title>
+{% endblock pageTitle %}
+
+{% block pageMetaData %}
+	<meta name='keywords' content='LPC,lpc, Living Plus Care,'>
+	<meta name='description' content='150 words'>
+	<meta name='subject' content='your website's subject'>
+	<meta name='topic' content=''>
+	<meta name='summary' content=''>
+{% endblock pageMetaData %}
+
 {% block content %}
 <section id="home-page">
 	<img class="w-100" src="{% static 'main/images/Home Page1.png' %}">
@@ -12,7 +24,7 @@
 				PARTNER IN HEALTH AND WELLBEING. WE ARE DEDICATED TO
 				ENHANCING THE QUALITY OF LIFE FOR OUR CLIENTS. 
 			</h1>
-			<p class="pb-3 " id="home-page-text-description">
+			<p class="pb-3 " id="home-page-text-description" style="font-size:16px;">
 				At Living Plus Care Service, we believe in the power of choice. We understand 
 				that every individaul is unique, and so are their needs. That's why we offer
 				bespoke care services tailored to your individaul requirements. Whether you
@@ -212,14 +224,14 @@
 				<div class="card">
 					<hr>
 					<h6 class="mb-0">HOME-CENTRIC CARE</h6>
-					<h3>Domiciliary Care</h3>
+					<h3 style="color:var(--text-white); font-weight:bolder;">Domiciliary Care</h3>
 
 					<p class="mb-3">
 						Customised care solutions delivered in the familiar environment of your home, enhancing your independence and quality of life. 
 					</p>
 
 					<br><br>
-					<a href="#readmore" class="btn">Read more</a>
+					<a href="{% url 'domicialiary_service' %}" class="btn">Read more</a>
 				</div>
 				
 			</article>
@@ -228,7 +240,7 @@
 				<div class="card">
 					<hr>
 					<h6  class="mb-0">ADAPTIVE STAFFING SOLUTIONS</h6>
-					<h3>Temporary Staffing</h3>
+					<h3 style="color:var(--text-white); font-weight:bolder;">Temporary Staffing</h3>
 
 					<p class="mb-3">
 						Flexible staffing solutions to address your unique needs, ensuring continuity of care even during unforeseen circumstances. 
@@ -244,14 +256,14 @@
 				<div class="card">
 					<hr>
 					<h6  class="mb-0">ASSISTED INDEPENDENCE</h6>
-					<h3>Supported Living</h3>
+					<h3 style="color:var(--text-white); font-weight:bolder;">Supported Living</h3>
 
 					<p class="mb-3">
 						Supportive services that promote self-reliance and empowerment, fostering an independent lifestyle while ensuring care and assistance are always at hand. 
 					</p>
 
 					<br><br>
-					<a href="#readmore" class="btn">Read more</a>
+					<a href="{% url 'supported_service' %}" class="btn">Read more</a>
 				</div>
 				
 			</article>
@@ -275,7 +287,7 @@
 
 		<div style="position:absolute;bottom: 0;left: 0; right: 0; width: 100%; height: 6em; background:white; opacity: .8;"  class="pt-3">
 			<div class="container">
-				<h2 class="py-2 px-3 mb-0 mt-auto">Guiding You to the Ideal Home Care Solution</h2>
+				<h2 class="py-3 px-4 mb-0 mt-auto">Guiding You to the Ideal Home Care Solution</h2>
 			</div>
 		</div>
 	</div>
@@ -342,25 +354,5 @@
 	
 </section>
 
-<section class="container conversation">
-	<div class="row">
-		<article class="col-md-6"> 
-			<br> <br>
-			<h2 class="mb-3">LET'S START <br>THE CONVERSATION TODAY</h2>
-			<p class="px-3">
-				Contact our caring team to explore the world of care
-				and discover how we can enhance your family's well-being
-				right at home.
-			</p>
-
-			<a href="{% url 'contact_us' %}" class="btn">Contact us</a>
-		</article>
-		<aside class="col-md-6">
-			<div class="img-container"> <br>
-				<img src="{% static 'main/images/conversation.jpeg' %}" class="w-100 mx-auto" style="border-radius: 10px; mix-blend-mode: multiply;">
-				<div class="overlay"></div>
-			</div>
-		</aside>
-	</div>
-</section>
+{% include "main/html-includes/start-conversation.html" %}
 {% endblock content %}

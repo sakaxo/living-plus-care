@@ -1,0 +1,22 @@
+{% load static %}
+<section class="container conversation">
+	<div class="row">
+		<article class="col-md-6"> 
+			<br> <br>
+			<h2 class="mb-3">LET'S START <br>THE CONVERSATION TODAY</h2>
+			<p class="px-3">
+				Contact our caring team to explore the world of care
+				and discover how we can enhance your family's well-being
+				right at home.
+			</p>
+
+			<a href="{% url 'contact_us' %}" class="btn">Contact us</a>
+		</article>
+		<aside class="col-md-6">
+			<div class="img-container"> <br>
+				<img src="{% static 'main/images/conversation.jpeg' %}" class="w-100 mx-auto" style="border-radius: 10px; mix-blend-mode: multiply;">
+				<div class="overlay"></div>
+			</div>
+		</aside>
+	</div>
+</section>
