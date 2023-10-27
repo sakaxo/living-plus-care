@@ -52,7 +52,7 @@ def send_form_data(request):
 			subject = f"New messsage from {fname} {lname}."
 			msg_from = email
 			msg_to = "info@livingpluscare.co.uk"
-			# send_mail(subject, msg, msg_from, [msg_to],fail_silently=False,)
+			send_mail(subject, msg, msg_from, [msg_to], fail_silently=False,)
 			messages.success(request, 'Message sent successfully, LPC team will reach out to you soon.')
 		
 		except:
