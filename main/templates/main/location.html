@@ -2,5 +2,88 @@
 {% load static %}
 
 {% block content %}
-	<h3>LOCATION</h3>
+<section id="lpc-location" mb-0>
+	<br> <br> <br>
+	<div class="row m-0" style="background:var(--card-bg-color);">
+		<div class="col-md-6 p-4 mx-0" >
+			
+			<div class="container p-3">
+				<p class="p-2" style="color: white; font-size: 20px;">
+					Welcome to Living Plus Care Services, your trusted local provider of bespoke home care services in the heart of Hertfordshire & Cambridgeshire. As active members of these vibrant communities, we are dedicated to delivering compassionate and personalised domiciliary, supported living care and temporary staffing services right at your doorstep. 
+
+				</p>
+			</div>
+
+		</div>
+		<div class="col-md-6 mx-0">
+			<!-- <div> -->
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9582126.543811895!2d-15.01335821668751!3d54.10235440210969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e0!3m2!1sen!2sgh!4v1698367435314!5m2!1sen!2sgh"s style="border:0; width: 100%; height:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mx-0"></iframe>
+			<!-- </div> -->
+		</div>
+		
+	</div>
+
+	<div class="container mt-4 py-4">
+		<div class="row">
+			<div class="col-md-5">
+				<img src="{% static 'main/images/lpc.png' %}" class="w-100 mb-4" style="border-radius: 30px;">
+			</div>
+			<div class="col-md-7">
+				<!-- <div clagss="d-fddlex"> -->
+					<h1 class="d-flex mb-0" style="color:var(--card-bg-color);">
+						<img src="{% static 'main/images/Group 312.png' %}" class="me-4"> 
+						Hertfordshire Office
+					</h1>
+					<div class="ms-4 mt-0 ps-5">
+						<p style="color:var(--darkblue-color);" class="p-fontWeight">
+							32 Market Place, Hatfield, Hertfordshire AL10 0LN, United Kingdom
+						</p>
+						<p>
+							Nestled in the heart of Hertfordshire, our Hatfield office is ideally situated to serve the local community with comprehensive and high-quality home care solutions. Known for its rich history and vibrant atmosphere, Hertfordshire is more than just our location—it's our home. We take pride in understanding the unique needs of this community and offering tailored services that not only meet but exceed expectations. 
+
+						</p>
+						<br>
+						<img src="{% static 'main/images/Qcare.png' %}">
+					</div>
+				<!-- </div> -->
+			</div>
+		
+		</div>
+	</div>
+
+	<div class="container mt-4 py-4">
+		<div class="row">
+			<div class="col-md-5">
+				<img src="{% static 'main/images/who-are-we 1.png' %}" class="w-100 mb-4" style="border-radius: 30px; ">
+			</div>
+			<div class="col-md-7">
+				<!-- <div clagss="d-fddlex"> -->
+					<h1 class="d-flex mb-0" style="color:var(--card-bg-color);">
+						<img src="{% static 'main/images/Group 312.png' %}" class="me-4"> 
+						Cambridgeshire Office
+					</h1>
+					<div class="ms-4 mt-0 ps-5">
+						<p style="color:var(--darkblue-color);" class="p-fontWeight">
+							Stuart House, East Wing, St John’s Street, Peterborough, United Kingdom
+						</p>
+						<p>
+							Situated within the thriving city of Peterborough, our second office stands as a beacon of hope for families seeking superior care services in the region. Peterborough is renowned for its strong community spirit and historical richness, values that are deeply embedded in our service ethos. Here, we strive to offer exceptional home care solutions, fostering independence, and enhancing the quality of life of our clients within the comfort and familiarity of their homes. 
+						</p>
+						<br>
+						<img src="{% static 'main/images/Qcare.png' %}">
+					</div>
+				<!-- </div> -->
+			</div>
+		
+		</div>
+	</div>
+</section>
+
+
+
+
+
+{% include "main/html-includes/start-conversation.html" %}
+
+
 {% endblock content %}
