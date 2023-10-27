@@ -16,4 +16,6 @@ urlpatterns = [
      path("services/temporary-staffing/", views.temporary_staffing, name="temporary_staffing"),
 
     path("frequently-asked-questions/", views.faq, name="faq"),
+
+    path("contact-us/send/", views.send_form_data, name="send_form_data"),
 ]

@@ -97,37 +97,53 @@
 			</h2>
 			<br>
 
-			<form id="contactForm">
+			<form id="contactForm" action="{% url 'send_form_data' %}" method="POST">
+				 {% csrf_token %}
+				 {% if messages %}
+				 	{% for message in messages %}
+					 <div class="w-50 mx-auto mb-4">
+						<!-- <div class="alert alert-success" role="alert">
+						  Message sent successfully.
+						</div> -->
+						<!-- <div class="alert alert-danger" role="alert">
+						  An error occurred, try sending your message again!
+						</div> -->
+						<div class="alert {% if message.tags %}alert-{{ message.tags }} {% endif %}"role="alert">
+							{{ message }}
+						</div>
+					 </div>
+					{% endfor %}
+				 {% endif %}
 				<div class="row">
 					<div class="col-md-6 mb-3">
 					    <label for="firstName" class="form-label">First Name</label>
-					    <input name="" placeholder="Collins" type="text" class="form-control" id="firstName">
+					    <input required name="firstName" placeholder="Collins" type="text" class="form-control" id="firstName">
 					    <br>
 					  </div>
 
 					<div class="col-md-6 mb-3">
 						<label for="lastName" class="form-label">Last Name</label>
-						<input name="" placeholder="Bonsi" type="text" class="form-control" id="lastName">
+						<input required name="lastName" placeholder="Bonsi" type="text" class="form-control" id="lastName">
 						<br>
 					</div>
 
 					<div class="col-md-6 mb-3">
 					    <label for="email" class="form-label">Email</label>
-					    <input name="" placeholder="collins2007@hotmail.co.uk" type="email" class="form-control" id="email">
+					    <input required name="email" placeholder="collins2007@hotmail.co.uk" type="email" class="form-control" id="email">
 
 					    <br>
 					</div>
 
 					<div class="col-md-6 mb-3">
 					    <label for="phoneNumber" class="form-label">Phone Number</label>
-					    <input name="" placeholder="+44 7485 441757" type="text" class="form-control" id="phoneNumber">
+					    <input required name="phoneNumber" placeholder="+44 7485 441757" type="text" class="form-control" id="phoneNumber">
 
 					    <br>
 					</div>
 
 					<div class="mb-3">
 						<label for="message" class="form-label">Message</label>
-					    <textarea name="" placeholder="We offer support with personal care tasks such as bathing, dressing, toileting, and grooming. Our caregivers respect your privacy and dignity while ensuring your personal hygiene needs are met." rows="8" class="form-control" aria-label="With textarea" id="message"></textarea>
+					    <textarea required name="message" placeholder="We offer support with personal care tasks such as bathing, dressing, toileting, and grooming. Our caregivers respect your privacy and dignity while ensuring your personal hygiene needs are met." rows="8" class="form-control" aria-label="With textarea" id="message"></textarea>
 
 					</div>
 
