@@ -1,6 +1,21 @@
 {% extends 'main/base-template.html' %}
 {% load static %}
 
+{% block pageTitle %}
+	<title>Our Corporate Responsibilities | Living Plus Care</title>
+{% endblock pageTitle %}
+
+{% block pageMetaData %}
+	<meta name='keywords' content='LPC, Care services, Living Plus Care, Domicialiary care services, Temporary staffing services, Supported living services, Hertfordshire Office, Cambridgeshire Office,
+	Care solution'>
+	<meta name='description' content='At Living Plus Care Services, we understand our role in society extends beyond providing excepeional home case services. We strive to positively impact our society, employees, and environment.'>
+	<meta name='subject' content='Living Plus Care Responsibility'>
+	<meta name='topic' content='Our corporate responsibility'>
+	<meta name='summary' content="As a locally rooted business in Hatfield and Peterborough we we deeply committed to fostering the growth development of our communities. We take pride in recruiting locally, providing job opportunities that strengthen the local economy and support individuals in their career paths. We also actively participate in apprenticeship schemes, nuturing the next generation of healthcare professionals.">
+{% endblock pageMetaData %}
+
+
+
 {% block content %}
 	<div class="about-banner">
 		<img src="{% static 'main/images/Image 29.png' %}" class="w-100">

@@ -1,6 +1,19 @@
 {% extends 'main/base-template.html' %}
 {% load static %}
 
+{% block pageTitle %}
+	<title> Who is living plus care?</title>
+{% endblock pageTitle %}
+
+{% block pageMetaData %}
+	<meta name='keywords' content='LPC, Care services, specialised provider of Domiciliary Care, Temporary Staffing, Supported Living services, Care solution, Care Professionals'>
+	<meta name='description' content='Living Plus Care Services is a specialised provider of Domiciliary Care, Temporary Staffing, and Supported Living services. As a unified community, our passion for exceptional care fuels our commitment to deliver unparalleled services right at your home.'>
+	<meta name='subject' content='Living Plus Care'>
+	<meta name='topic' content='Who is living plus care?'>
+	<meta name='summary' content="We provide a comprehensive array of healthcare solutions to a wide clientele, including hospitals, care homes, private clients, and those referred by social services. Our ability to supply a variety of healthcare professionals to meet diverse needs sets us apart.">
+{% endblock pageMetaData %}
+
+
 {% block content %}
 	<div class="about-banner">
 		<img src="{% static 'main/images/who-are-we 1.png' %}" class="w-100">

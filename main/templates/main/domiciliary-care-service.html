@@ -1,6 +1,19 @@
 {% extends 'main/base-template.html' %}
 {% load static %}
 
+{% block pageTitle %}
+	<title>Domiciliary Care Service | Living Plus Care </title>
+{% endblock pageTitle %}
+
+{% block pageMetaData %}
+	<meta name='keywords' content='Domiciliary care service, home care services, specialised provider of Domiciliary Care, Advantages of Domiciliary Care, Ensuring Consistent Domiciliary Care, Care solution, Care Professionals, seeking assistance'>
+	<meta name='description' content='Domiciliary care, also known as home care, is a service that supports individuals in their own homes with activities of daily living. Our care services are personalised, flexible, and planned according to your individual needs and lifestyle preferences. Whether you need help with daily tasks, personal care, or specialist care related to specific conditions, our trained caregivers are here to support you.'>
+	<meta name='subject' content='Our Domiciliary Care Services - Living Plus Care'>
+	<meta name='topic' content='Our Domiciliary Care Services'>
+	<meta name='summary' content="At Living Plus Care Services, we believe in delivering care that improves lives, supports independence, and ensures our clients can continue to live at home where they are most comfortable. Our domiciliary care services are more than just help - they are a commitment to enhancing your lifestyle and well-being. To learn more about how we can support you or your loved ones, please contact us today.">
+{% endblock pageMetaData %}
+
+
 {% block content %}
 	<div class="about-banner mb-3">
 		<img src="{% static 'main/images/Image 12.png' %}" class="w-100">

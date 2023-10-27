@@ -1,6 +1,22 @@
 {% extends 'main/base-template.html' %}
 {% load static %}
 
+
+{% block pageTitle %}
+	<title>About us | Living Plus Care</title>
+{% endblock pageTitle %}
+
+{% block pageMetaData %}
+	<meta name='keywords' content='About Living Plus Care, home care services, specialised home care provider, Care solution, Care Professionals, seeking assistance, mission, vision, core values, dedicated team'>
+	<meta name='description' content="At Living Plus Care Services, our mission is to empower individuals and their families to lead fulfilling, independent lives through compassionate, high-quality homecare services. We are committed to promoting dignity, respect, and wellbeing in every interaction, making a positive difference in the lives we touch.">
+	<meta name='subject' content='About Living Plus Care'>
+	<meta name='topic' content='About us'>
+	<meta name='summary' content="At Living Plus Care Services, we believe in providing not just a service, but a sense of comport belonging. Our dedication to your well-being is reflected in the personalise care we offer to make your home a sanctuary of health and happiness. With a team of highly trained professionals, we deliver bespoke care plans designed around your unique needs. Your comfort is our commitment, and we bring this promise to life, right in your own home.
+
+">
+{% endblock pageMetaData %}
+
+
 {% block content %}
 <section class="mb-4" id="About">
 	<img class="w-100" src="{% static 'main/images/Image 26.png' %}" style="height: 30em;">
