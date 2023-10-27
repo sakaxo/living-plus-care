@@ -13,7 +13,7 @@ urlpatterns = [
 
     path("services/domicialiary-care/", views.domicialiary_service, name="domicialiary_service"),
     path("services/supported-living/", views.supported_service, name="supported_service"),
-     # path("services/temporary-staffing/", views.temporary_staffing, name="temporary_staffing"),
+     path("services/temporary-staffing/", views.temporary_staffing, name="temporary_staffing"),
 
     path("frequently-asked-questions/", views.faq, name="faq"),
 ]

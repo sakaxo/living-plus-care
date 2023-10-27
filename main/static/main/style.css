@@ -484,7 +484,17 @@ ul li span{
   opacity:.192;
 }
 
+.staffing{
+  background: var(--darkblue-color);
+  color: var(--text-white);
+  border-radius: 20px;
+}
 
+.our-briefs{
+  background:var(--darkblue-color); 
+  border-radius: 20px; 
+  color: var(--text-white);
+}
 
 
 

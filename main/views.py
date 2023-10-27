@@ -32,5 +32,5 @@ def faq(request):
 def about(request):
 	return render(request, 'main/about-us.html')
 
-# def temporary_staffing(request):
-# 	return render(request, 'main/index.html')
+def temporary_staffing(request):
+	return render(request, 'main/temporary-staffing.html')
