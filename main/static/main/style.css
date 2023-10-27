@@ -340,20 +340,39 @@ ul li span{
   color:var(--text-white);
 }
 
-.mark-the-move h2{
+.make-the-move h2{
   font-weight: bold;
 }
 
-.mark-the-move img{
+.make-the-move img{
   border-radius:35px;
 }
 
-.mark-the-move p{
+.make-the-move p{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
   border-radius:20px;
   background: white;
   position:relative; 
   top:30%;
+}
+#make-the-move-text1{
+  right:20%;
+  top: 25%;
+}
+
+#make-the-move-text2{
+  left:20%;
+  top: 25%;
+}
+
+#make-the-move-text3{
+  right:20%;
+  top: 25%;
+}
+
+#make-the-move-text4{
+  left:20%;
+  top: 25%;
 }
 
 #supported{

@@ -1,3 +1,48 @@
+@media only screen and (max-width: 1199px) {
+#make-the-move-text1, #make-the-move-text2{
+  top: 10%;
+}
+
+#make-the-move-text3, #make-the-move-text4{
+  top: 15%;
+}
+}
+
+@media only screen and (max-width: 985px) {
+#make-the-move-text1{
+  top: 5px;
+/*  right: 0;*/
+}
+#try{
+  /*height: 100%;
+  width: auto;*/
+}
+} 
+
+@media only screen and (max-width: 767px) {
+#make-the-move-text1, #make-the-move-text3{
+  top: 0;
+  right: 0;
+}
+
+#make-the-move-text2, #make-the-move-text4{
+  top: 0;
+  left: 0;
+}
+
+/*#make-the-move-text1, #make-the-move-text3{
+  top: -20%;
+}
+
+#make-the-move-text2, #make-the-move-text4{
+  top: 50%;
+}
+*/
+.mb-remove{
+  margin-bottom: 2px !important;
+}
+} 
+
 @media only screen and (max-width: 770px) {
 #guiding-you h2{
   width: 80%;
