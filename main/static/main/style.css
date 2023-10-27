@@ -389,6 +389,27 @@ ul li span{
   border-radius:20px;
 }
 
+#About{
+  position: relative;
+  text-align: center; 
+/*  color: white;*/
+}
+
+#About div{
+  position: absolute;top: 70%;left: 50%; 
+  transform:translate(-50%, -50%); 
+}
+
+#About1-card{
+  background:linear-gradient(var(--card-bg-color),var(--darkblue-color)); 
+  border-radius: 20px;
+  color: var(--text-white);
+}
+
+.our-team{
+  color:var(--card-bg-color);
+}
+
 #supported-living{
   position: relative;
 }

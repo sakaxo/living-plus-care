@@ -46,9 +46,10 @@
 			        </li>
 			        <li class="nav-item dropdown">
 			          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-			            About us
+			            About
 			          </a>
 			          <ul class="dropdown-menu">
+			          	<li><a class="dropdown-item" href="{% url 'about' %}">About Us</a></li>
 			            <li><a class="dropdown-item" href="{% url 'who_we_are' %}">Who We Are</a></li>
 			            <li><a class="dropdown-item" href="{% url 'why_choose_us' %}">Why Choose Us</a></li>
 			            <li><a class="dropdown-item" href="{% url 'corporate_responsibility' %}">Our Corporate Social Responsibility</a></li>
@@ -68,10 +69,10 @@
 			            	<a class="dropdown-item" href="{% url 'supported_service' %}">					Supported Living
 			            	</a>
 			            </li>
-			            <!-- <li>
-			            	<a class="dropdown-item" href="#Temporary-staffing">Temporary staffing
+			            <li>
+			            	<a class="dropdown-item" href="#temporary_staffing">Temporary Staffing
 			            	</a>
-			            </li> -->
+			            </li>
 			          </ul>
 			        </li>
 			        <li class="nav-item">
@@ -129,10 +130,10 @@
 							<ul>
 								<li><a class="btn" href="{% url 'who_we_are' %}">Who we are</a></li>
 								<li><a class="btn" href="{% url 'why_choose_us' %}">Why choose us</a></li>
-								<li><a class="btn btn-danger" href="#mission">Our Mission Statement</a></li>
-								<li><a class="btn btn-danger" href="#vision">Our Vision</a></li>
-								<li><a class="btn btn-danger" href="#values">Our Core Values</a></li>
-								<li><a class="btn btn-danger" href="#team">Our Dedicated Team</a></li>
+								<li><a class="btn" href="{% url 'about' %}#our-mission">Our Mission Statement</a></li>
+								<li><a class="btn" href="{% url 'about' %}#our-vision">Our Vision</a></li>
+								<li><a class="btn" href="{% url 'about' %}#our-core-values">Our Core Values</a></li>
+								<li><a class="btn" href="{% url 'about' %}#our-dedicated-team">Our Dedicated Team</a></li>
 								<li><a class="btn" href="{% url 'corporate_responsibility' %}">Our Corporate Social Responsibility</a></li>
 							</ul>
 						</div>
@@ -140,15 +141,15 @@
 							<h2>Services</h2>
 							<ul>
 								<li><a class="btn" href="{% url 'domicialiary_service' %}">Domiciliary Care</a></li>
-								<li><a class="btn btn-danger" href="#staffing">Temporary Staffing</a></li>
+								<li><a class="btn btn-danger" href="#temporary_staffing">Temporary Staffing</a></li>
 								<li><a class="btn" href="{% url 'supported_service' %}">Supported Living</a></li>
 							</ul>
 
 							<br>
 							<h2>Quick Links</h2>
 							<ul>
-								<li><a class="btn btn-danger" href="{% url 'faq' %}">FAQs</a></li>
-								<li><a class="btn" href="#download">Download Our Brochures</a></li>
+								<li><a class="btn" href="{% url 'faq' %}">FAQs</a></li>
+								<li><a class="btn btn-danger" href="#download">Download Our Brochures</a></li>
 							</ul>
 						</div>
 						<div class="col-md-4">

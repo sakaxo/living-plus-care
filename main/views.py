@@ -29,5 +29,8 @@ def supported_service(request):
 def faq(request):
 	return render(request, 'main/faqs.html')
 
-# def corporate_responsibility(request):
+def about(request):
+	return render(request, 'main/about-us.html')
+
+# def temporary_staffing(request):
 # 	return render(request, 'main/index.html')
