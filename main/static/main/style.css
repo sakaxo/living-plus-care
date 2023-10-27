@@ -456,6 +456,17 @@ ul li span{
 #empowering-individuals h3, h4{
   color: var(--darkblue-color);
 }
+
+.faq-overlay {
+  background: yellow; 
+  border-radius: 20px;
+  opacity:.192;
+}
+
+
+
+
+
 /*FOOTER START*/
 
 footer{

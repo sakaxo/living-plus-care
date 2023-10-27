@@ -26,8 +26,8 @@ def domicialiary_service(request):
 def supported_service(request):
 	return render(request, 'main/supported-living-service.html')
 
-# def corporate_responsibility(request):
-# 	return render(request, 'main/index.html')
+def faq(request):
+	return render(request, 'main/faqs.html')
 
 # def corporate_responsibility(request):
 # 	return render(request, 'main/index.html')

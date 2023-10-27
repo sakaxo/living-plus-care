@@ -10,5 +10,5 @@ urlpatterns = [
     path("about-us/our-corporate-social-responsibility/", views.corporate_responsibility, name="corporate_responsibility"),
     path("services/domicialiary-care/", views.domicialiary_service, name="domicialiary_service"),
     path("services/supported-living/", views.supported_service, name="supported_service"),
-    # path("locations/", views.location, name="location"),
+    path("frequently-asked-questions/", views.faq, name="faq"),
 ]
